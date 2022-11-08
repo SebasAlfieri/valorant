@@ -376,3 +376,11 @@ a{
     }
 
 }
+
+@media (min-width: 1440px){
+
+    .container{
+        top: 30%;
+    }
+
+}
