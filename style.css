@@ -1,0 +1,378 @@
+html body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: valorantfont;
+    color: white;
+}
+
+@font-face {
+    font-family: valorantfont;
+    src: url(./@font-face/valorantfont.ttf);
+}
+
+
+video{
+    display: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/fondocelu.jpg);
+}
+
+video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1{
+    width: 100%;
+    font-size: 2rem;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    
+}
+
+.container{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(143, 24, 34, 0);
+    top: 30%;
+    left: 15%;
+    width: 70vw;
+    height: 40vh;
+    background-image:none;
+}
+
+.op{
+    transition: 0.3s;
+    opacity: calc(0.4);
+}
+
+.op:hover{
+    opacity: calc(1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(15,25,34,255);
+    border: 2px solid rgba(255,70,86,255);
+}
+
+.class{
+    display: flex;
+    width: 100%;
+    height: 80%;
+
+}
+
+.img{
+    display: flex;
+    width: 50%;
+    height: 60%;
+    align-self: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.centinelas{
+    background-image: url(./images/centinela.png);
+}
+
+.bottom1{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(26, 42, 116, 0);
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom1 p{
+    display: flex;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+}
+
+.op:hover > .bottom1 p{
+    animation-duration: 0.8s;
+    animation-name: bottom1p;
+    animation-fill-mode: forwards;
+}
+
+.op:hover > .bottom1{
+    animation-duration: 0.5s;
+    animation-name: bottom1;
+    animation-fill-mode: forwards;
+}
+
+
+.bottom1 p::after{
+    content: " >";
+    margin-left: 5px;
+}
+
+.bottom2{
+    display: flex;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(55, 54, 63);
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom2 p{
+    display: flex;
+    text-align: center;
+}
+
+@keyframes bottom1{
+    0% {
+        background-color: rgba(55, 54, 63, 0);
+        outline: 0px solid rgba(255,70,86,255);
+        border-bottom: 0px solid rgba(255,70,86,255);
+    }
+    
+    20% {
+        background-color: rgba(55, 54, 63, 0);
+        outline: 0px solid rgba(255,70,86,255);
+        border-bottom: 0px solid rgba(255,70,86,255);
+    }
+
+    70% {
+        background-color: rgba(55, 54, 63, 0);
+        outline: 0px solid rgba(255,70,86,255);
+        border-bottom: 0px solid rgba(255,70,86,255);
+    }
+    
+
+    100% {
+        background-color: rgb(55, 54, 63);
+        outline: 2px solid rgba(255,70,86,255);
+        border-bottom: 2px solid rgba(255,70,86,255);
+    }    
+}
+
+@keyframes bottom1p{
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    20% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    70% {
+        color: rgba(255, 255, 255, 0);
+    }
+    
+
+    100% {
+        color: rgba(255, 255, 255, 255);
+    }    
+}
+
+@media (min-width: 768px) {
+
+    .container{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid rgb(143, 24, 34);
+        top: 20%;
+        left: 15%;
+        width: 70vw;
+        height: fit-content;
+        background-image: url(./images/pattern.jpg);
+    }
+    
+    .box{
+        display: flex;
+        margin: 20px 0;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(15,25,34,255);
+        border: 2px solid rgba(255,70,86,255);
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    video{
+        display: flex;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 2rem;
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        
+    }
+    
+    .container{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid rgb(143, 24, 34);
+        top: 20%;
+        left: 15%;
+        width: 70vw;
+        height: fit-content;
+        background-image: url(./images/pattern.jpg);
+    }
+    
+    .op{
+        transition: 0.3s;
+        opacity: calc(0.4);
+    }
+    
+    .op:hover{
+        opacity: calc(1);
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .box{
+        display: flex;
+        margin: 50px 0;
+        flex-direction: column;
+        width: 300px;
+        height: 350px;
+        background-color: rgba(15,25,34,255);
+        border: 2px solid rgba(255,70,86,255);
+    }
+    
+    .class{
+        display: flex;
+        width: 100%;
+        height: 80%;
+    
+    }
+    
+    .img{
+        display: flex;
+        width: 50%;
+        height: 60%;
+        align-self: center;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .centinelas{
+        background-image: url(./images/centinela.png);
+    }
+    
+    .bottom1{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        background-color: rgba(26, 42, 116, 0);
+        transition: 0.3s;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom1 p{
+        display: flex;
+        text-align: center;
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    .op:hover > .bottom1 p{
+        animation-duration: 0.8s;
+        animation-name: bottom1p;
+        animation-fill-mode: forwards;
+    }
+    
+    .op:hover > .bottom1{
+        animation-duration: 0.5s;
+        animation-name: bottom1;
+        animation-fill-mode: forwards;
+    }
+    
+    
+    .bottom1 p::after{
+        content: " >";
+        margin-left: 5px;
+    }
+    
+    .bottom2{
+        display: flex;
+        letter-spacing: 2px;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(55, 54, 63);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom2 p{
+        display: flex;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .container{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid rgb(143, 24, 34);
+        top: 20%;
+        left: 15%;
+        width: 70vw;
+        height: fit-content;
+        background-image: url(./images/pattern.jpg);
+    }
+    
+    .box{
+        display: flex;
+        margin: 50px 0;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(15,25,34,255);
+        border: 2px solid rgba(255,70,86,255);
+    }
+
+}

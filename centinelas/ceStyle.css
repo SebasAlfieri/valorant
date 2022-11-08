@@ -1,0 +1,1024 @@
+
+    @font-face {
+        font-family: Valorant;
+        src: url(../@font-face/valorantfont.ttf);
+    }
+    
+    html body{
+        width: 100vw;
+        height: fit-content;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-image: url(../images/pattern.jpg);
+        font-family: Valorant;
+        color: white;
+    }
+    
+    .back{
+        display: flex;
+        position: fixed;
+        color: white;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 1%;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        transition: 0.2s;
+        background-color: rgba(234, 75, 94, 0.513);
+        border-radius: 50%;
+    }
+    
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        justify-content: space-between;
+    }
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: fit-content;
+        width: 90%;
+        height: 300px;
+        text-align: center;
+        order: 3;
+        height: fit-content;
+        margin-bottom:75px;
+    }
+
+    .rec{
+        display: flex;
+        font-size: 2rem;
+        height: fit-content;
+        text-decoration: white underline;
+        align-self: center;
+        text-align: center;
+    }
+
+    .mapimg{
+        height: 150px;
+        background-color: #fff;
+        display: flex;
+        width: 95%;
+        border: 1px solid white;
+        background-image: url(../images/haven.png);
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+    }
+
+    .mapnombre{
+        font-size: 1.7rem;
+        margin: 27px 0;
+    }
+
+    .box2{
+        display: flex;
+        margin-top: 5vh;
+        width: 350px;
+        order: 1;
+        height: 500px;
+        margin: auto;
+        background-image: url(../images/cypher.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: 0.3s;
+    }
+
+    .box3{
+        display: flex;
+        margin-top: 10px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        text-align: center;
+    }
+    
+    footer{
+        display: flex;
+        bottom: 0;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        height: 7%;
+        margin:0;
+    }
+
+    .selStyle{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: 0.3s;
+    }
+    
+    .sel1{
+        background-image: url(../images/cypher2.png);
+        background-color: rgb(234,75,94);
+    }
+    
+    .sel2{
+        background-image: url(../images/sage2.png);
+        background-color: rgb(55, 54, 63);
+        opacity: 0.5;
+    }
+    
+    .sel3{
+        background-image: url(../images/killjoy2.png);
+        background-color: rgb(55, 54, 63);
+        opacity: 0.5;
+    }
+    
+    .sel4{
+        background-image: url(../images/chamber2.png);
+        background-color: rgb(55, 54, 63);
+        opacity: 0.5;
+    }
+
+    .nombre{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 3rem;
+        justify-content: center;
+        margin:0;
+    }
+
+    .nombre p{
+        margin: auto;
+    }
+
+    .nav{
+        display: flex;
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: rgb(55, 54, 63);
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        border: 2px solid rgb(234,75,94);
+        border-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav{
+        font-size: 1rem;
+        display: flex;
+        color: rgb(234,75,94);
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+        
+    .nav:hover{
+        transform: scale(1.1);
+    }
+
+
+    .botonStyle{
+        display: flex;
+        margin-top: 5vh;
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-self: center;
+        align-self: center;
+        margin: 50px;
+    }
+
+    .botonStyle:hover{
+        background-color: rgb(186, 56, 71);
+    }
+ 
+
+    .botonStyle a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        font-style: none;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+        text-decoration: none;
+    }
+
+
+    .boton_habilidades{
+        background-color: rgb(234,75,94);
+        border: 4px solid rgb(255, 255, 255);
+    }
+    
+
+    
+    .boton_habilidades2{
+        display: none;
+        background-color: rgb(234,75,94);
+        border: 4px solid rgb(255, 255, 255);
+    }
+    
+    
+    .boton_habilidades3{
+        display: none;
+        background-color: rgb(234,75,94);
+        border: 4px solid rgb(255, 255, 255);
+    }
+    
+    
+    .boton_habilidades4{
+        display: none;
+        background-color: rgb(234,75,94);
+        border: 4px solid rgb(255, 255, 255);
+    }
+    
+
+    .biblio{
+        display: flex;
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 1rem;
+        text-align: start;
+        margin: auto;
+    }
+
+    .bibliotitulo{
+        display: flex;
+        font-size: 1.5rem;
+        margin-left: 30px;
+    }
+    
+    .biblio{
+        display: flex;
+        width: 80%;
+        height: fit-content;
+        font-size: 1rem;
+        justify-self: center;
+    }
+
+    #popup_fondo{
+        display: none;
+        margin-top: -50px;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.452);
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    #popup1,
+    #popup2,
+    #popup3,
+    #popup4{
+        position: fixed;
+        display: none;
+        width: 80vw;
+        height: fit-content;
+        background-color: rgb(31, 25, 25);
+        border: 4px solid rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 10;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        align-self: center;
+    }
+
+    #hdescripcion1,
+    #hdescripcion2,
+    #hdescripcion3,
+    #hdescripcion4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        background-color: rgb(98, 85, 85);
+        font-size: 0.6rem;
+        border: 3px solid rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 10px;
+        height: fit-content;
+        margin: 25px 0;
+    }
+
+    #hvideo{
+        width: fit-content;
+        height: fit-content;
+        background-image:none;
+        margin-top: 1vh;
+    }
+
+    video{
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+    }
+
+    #h_2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+        background-color: rgb(31, 25, 25);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #h_1{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    .abilityStyle{
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #i1{
+        background-image: url(../images/icons/cypher/c.png);
+        background-color: rgb(234,75,94);
+    }
+    
+    #i2{
+        background-image: url(../images/icons/cypher/q.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #i3{
+        background-image: url(../images/icons/cypher/e.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #i4{
+        background-image: url(../images/icons/cypher/x.png);
+        background-color: rgb(46, 38, 38);
+    }
+
+    #s1{
+        background-image: url(../images/icons/sage/bola.png);
+        background-color: rgb(234,75,94);
+    }
+    
+    #s2{
+        background-image: url(../images/icons/sage/cura.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #s3{
+        background-image: url(../images/icons/sage/muro.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #s4{
+        background-image: url(../images/icons/sage/ult.png);
+        background-color: rgb(46, 38, 38);
+    }
+
+    #kj1{
+        background-image: url(../images/icons/kj/killjoy_q.png);
+        background-color: rgb(234,75,94);
+    }
+    
+    #kj2{
+        background-image: url(../images/icons/kj/Turret.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #kj3{
+
+        background-image: url(../images/icons/kj/nano.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #kj4{
+        background-image: url(../images/icons/kj/Lockdown.png);
+        background-color: rgb(46, 38, 38);
+    }
+
+
+    #ch1{
+        background-image: url(../images/icons/chamber/chambq.png);
+        background-color: rgb(234,75,94);
+    }
+    
+    #ch2{
+        background-image: url(../images/icons/chamber/tp.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #ch3{
+        background-image: url(../images/icons/chamber/trap.png);
+        background-color: rgb(46, 38, 38);
+    }
+    
+    #ch4{
+        background-image: url(../images/icons/chamber/ult.png);
+        background-color: rgb(46, 38, 38);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+
+@media (min-width: 768px){
+
+    #popup1,
+    #popup2,
+    #popup3,
+    #popup4{
+        width: 60vw;
+    }
+
+    #hdescripcion1,
+    #hdescripcion2,
+    #hdescripcion3,
+    #hdescripcion4{
+        font-size: 0.7rem;
+    }
+
+    #h_2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+        background-color: rgb(31, 25, 25);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #h_1{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    .abilityStyle{
+        width: 80px;
+        height: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+}
+
+
+
+
+@media (min-width: 1024px){
+    
+    html body{
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-image: url(../images/pattern.jpg);
+        font-family: Valorant;
+        color: white;
+    }
+    
+    .back{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        color: white;
+        font-size: 2rem;
+        padding: 1%;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        transition: 0.2s;
+        background-color: rgba(234, 75, 94, 0.513);
+        border-radius: 50%;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .back:hover{
+        transform: scale(1.1);
+        color: rgb(234,75,94);
+    }
+    
+
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box1{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+    
+    .rec{
+        display: flex;
+        font-size: 2rem;
+        text-decoration: white underline;
+    }
+    
+    .mapimg{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        display: flex;
+        width: 95%;
+        height: 30%;
+        border: 1px solid white;
+        background-image: url(../images/haven.png);
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+    }
+    
+    .mapnombre{
+        display: flex;
+        font-size: 1.5rem;
+    }
+    
+    .box2{
+        display: flex;
+        height: 500px;
+        width: 30%;
+        background-image: url(../images/cypher.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: 0.3s;
+    }
+    
+    footer{
+        display: flex;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        height: 5%;
+    }
+    
+    .sel1{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        background-image: url(../images/cypher2.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(234,75,94);
+        transition: 0.3s;
+    }
+    
+    .sel2{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        background-image: url(../images/sage2.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(55, 54, 63);
+        transition: 0.3s;
+        opacity: 0.5;
+    }
+    
+    .sel3{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        background-image: url(../images/killjoy2.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(55, 54, 63);
+        transition: 0.3s;
+        opacity: 0.5;
+    }
+    
+    .sel4{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        background-image: url(../images/chamber2.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(55, 54, 63);
+        transition: 0.3s;
+        opacity: 0.5;
+    }
+    
+    p{
+        margin: 0;
+    }
+    
+    .box3{
+        display: flex;
+        height: fit-content;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nombre{
+        width: fit-content;
+    }
+    
+    .bibliotitulo{
+        display: flex;
+        width: 2%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 1rem;
+    }
+    
+    .biblio{
+        display: flex;
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 1rem;
+    }
+
+    .botonStyle{
+        width: fit-content;
+        padding: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-self: center;
+        align-self: center;
+        margin: 50px;
+        width: fit-content;
+    }
+    
+    .boton_habilidades{
+        display: flex;
+        margin-top: 5vh;
+        height: fit-content;
+        background-color: rgb(234,75,94);
+        border: 4px solid rgb(255, 255, 255);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-self: center;
+        align-self: center;
+        margin: 50px;
+    }
+    
+    .boton_habilidades a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        font-style: none;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    }
+    
+    #popup1,
+    #popup2,
+    #popup3,
+    #popup4{
+        position: fixed;
+        display: none;
+        flex-direction: row;
+        width: 60vw;
+        height: 70vh;
+        background-color: rgb(31, 25, 25);
+        border: 4px solid rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 10;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #h_1{
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 90%;
+        justify-content: space-between;
+    }
+    
+    #i1{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/cypher/c.png);
+        background-color: rgb(234,75,94);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #i2{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/cypher/q.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #i3{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/cypher/e.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #i4{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/cypher/x.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #s1{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/sage/bola.png);
+        background-color: rgb(234,75,94);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #s2{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/sage/cura.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #s3{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/sage/muro.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #s4{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/sage/ult.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #kj1{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/kj/killjoy_q.png);
+        background-color: rgb(234,75,94);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #kj2{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/kj/Turret.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #kj3{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/kj/nano.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #kj4{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/kj/Lockdown.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #ch1{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/chamber/chambq.png);
+        background-color: rgb(234,75,94);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #ch2{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/chamber/tp.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #ch3{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/chamber/trap.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #ch4{
+        width: 100%;
+        height: 22%;
+        background-image: url(../images/icons/chamber/ult.png);
+        background-color: rgb(46, 38, 38);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-size: 50%;
+    }
+    
+    #h_2{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 90%;
+        background-color: rgb(46, 38, 38);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #hvideo{
+        width: fit-content;
+        height: 60%;
+        background-image: url(../images/load.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+   video{
+        width: 100%;
+        height: 100%;
+        outline: 2px solid white;
+    }
+
+    #hdescripcion1,
+    #hdescripcion2,
+    #hdescripcion3,
+    #hdescripcion4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        height: 15%;
+        background-color: rgb(98, 85, 85);
+        font-size: 0.6rem;
+        border: 3px solid rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    #hdescripcion1 p{
+        margin: 20px;
+    }
+    
+    #popup_fondo{
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.452);
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+}
+
+@media (min-width:1440px){
+
+    .nav{
+        font-size: 1.7rem;
+
+    }
+
+    .box2{
+        height: 750px;
+    }
+
+    .botonStyle{
+        margin: 50px;
+    }
+
+    .boton_habilidades a{
+        font-size: 2rem;
+    }
+
+    #hdescripcion1,
+    #hdescripcion2,
+    #hdescripcion3,
+    #hdescripcion4{
+        font-size: 0.8rem;
+    }
+
+    .back{
+        width: 70px;
+        height: 70px;
+        font-size: 3rem;
+    }
+    
+}
